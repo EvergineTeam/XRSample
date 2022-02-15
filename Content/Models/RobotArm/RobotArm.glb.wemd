@@ -1,0 +1,34 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 10f9f8a3-7012-4c5a-9f83-e924ce7bf13b
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: c7007d23-9c44-49a5-badf-e4c485929342
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 6988ae1e-3143-46ba-9b28-bd355ecb20e6
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: robot_base
+        Item2: fb5f11d2-3cf8-4cf1-a5d1-e1f7f03e6e40
+      - Item1: robo_arm
+        Item2: 9e3483bc-8f82-48aa-91d9-494840b03abc
+    Nodes:
+      - Base.Art1.Art2.Art3.Art4.Art5
+      - Base.Art1.Art2.Art3.Art4.Hand
+      - Base.Art1.Art2.Art3.Art4
+      - Base.Art1.Art2.Art3
+      - Base.Art1.Art2
+      - Base.Art1
+      - Base
+SwapWindingOrder: false

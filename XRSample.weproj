@@ -1,0 +1,30 @@
+Packages:
+  - Id: Evergine.Core
+    LocalPath: null
+    Version: 2023.2.10.4-develop
+Profiles:
+  - AdditionalEffectTechniqueCombinations: SHADOW_SUPPORTED-SHADOWFILTER7
+    AlphaCompressionFormat: BC3_UNorm
+    CompileEffects: false
+    GraphicsBackend: DirectX11
+    LauncherType: Default
+    Name: Windows
+    NonAlphaCompressionFormat: BC3_UNorm
+    Platform: Windows
+  - AdditionalEffectTechniqueCombinations: LOW_PROFILE-SHADOW_SUPPORTED-SHADOWFILTER3, LOW_PROFILE-GAMMA_COLORSPACE-SHADOW_SUPPORTED-SHADOWFILTER3, LOW_PROFILE-MULTIVIEW_VI-SHADOW_SUPPORTED-SHADOWFILTER3, LOW_PROFILE-MULTIVIEW_VI-GAMMA_COLORSPACE-SHADOW_SUPPORTED-SHADOWFILTER3
+    AlphaCompressionFormat: R4G4B4A4
+    CompileEffects: true
+    GraphicsBackend: Vulkan
+    LauncherType: MetaQuest
+    Name: Quest
+    NonAlphaCompressionFormat: ETC1_RGB8
+    Platform: Android
+  - AdditionalEffectTechniqueCombinations: SHADOW_SUPPORTED-SHADOWFILTER7
+    AlphaCompressionFormat: BC3_UNorm
+    CompileEffects: false
+    GraphicsBackend: DirectX11
+    LauncherType: Default
+    Name: OpenXR
+    NonAlphaCompressionFormat: BC3_UNorm
+    Platform: Windows
+ResourcesPath: Content

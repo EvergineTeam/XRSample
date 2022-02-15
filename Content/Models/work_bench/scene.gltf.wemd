@@ -1,0 +1,29 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: eefcab9e-9a29-4e27-8a47-56b430c70c82
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 495d5769-dca3-4f38-9cda-11c87f0407bc
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: f65e40a7-4b0f-4e4e-a41e-3f8ce110394d
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: lambert1
+        Item2: c6a32a59-c7e5-4d49-85b2-9e3aafb8a52c
+    Nodes:
+      - Sketchfab_model
+      - Sketchfab_model.Collada visual scene group
+      - Sketchfab_model.Collada visual scene group.smTable
+      - Sketchfab_model.Collada visual scene group.smTable.defaultMaterial
+SwapWindingOrder: false

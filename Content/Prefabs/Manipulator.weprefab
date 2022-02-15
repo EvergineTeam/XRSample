@@ -1,0 +1,102 @@
+!Evergine.Framework.Assets.AssetSources.Entities.PrefabModel,Evergine.Framework
+Root:
+  Name: Manipulator
+  Tag: null
+  IsEnabled: true
+  IsStatic: false
+  Components:
+    - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+      Id: f9c721d8-c3c7-4c3c-8f8b-ff38abb5cc72
+      IsEnabled: true
+      LocalOrientation:
+        W: 0.707106769
+        X: 0.707106769
+        Y: 0.0
+        Z: 0.0
+      LocalPosition:
+        X: 0.0
+        Y: 0.084487319
+        Z: 0.0
+      LocalScale:
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
+    - !Evergine.Components.Primitives.LineArcMesh,Evergine.Components
+      Id: e8c17089-6e21-410c-8055-3429c629fed8
+      Angle: 6.28318548
+      Color:
+        A: 255
+        B: 77
+        G: 196
+        R: 255
+      DiffuseSampler: 9018edf8-ea96-4721-bf83-5561942432e0
+      DiffuseTexture: 44a46436-9bec-47c0-93ff-a83ca11d1913
+      IsCameraAligned: false
+      IsEnabled: true
+      Model: 00000000-0000-0000-0000-000000000000
+      Radius:
+        X: 0.120000012
+        Y: 0.120000012
+      Tessellation: 50
+      TexcoordOffset:
+        X: 0.0
+        Y: 0.0
+      TextureTiling:
+        X: 5.0
+        Y: 1.0
+      Thickness: 0.0299999993
+      UseWorldSpace: false
+    - !Evergine.Components.Graphics3D.LineMeshRenderer3D,Evergine.Components
+      Id: b8be4227-b4bc-4c7b-acb6-8f7dcc2a5b77
+      DebugBoundingbox: true
+      IsCullingEnabled: true
+      IsEnabled: true
+      Layer: 4d1596c3-9e56-430d-819f-e088ffff9e10
+      OrderBias: 0
+      RenderFlags: CastShadows
+    - !XRSample.Features.Manipulator.ManipulatorComponent,XRSample
+      Id: 4dd19593-201d-4a96-841d-19063b5df967
+      AngleRotationSpeed: 0.0
+      AxisRotation: YAxis
+      IsEnabled: true
+      LimitAngle: false
+      MaxAngleLimit: 0.0
+      MinAngleLimit: 0.0
+      UpdateOrder: 0.5
+    - !Evergine.Framework.Physics3D.StaticBody3D,Evergine.Framework
+      Id: 75d6202e-c690-4744-afcc-ca52a9848423
+      CcdMotionThreshold: 0.0
+      CcdSweptSphereRadius: 0.200000003
+      CollisionCategories: Cat1
+      Friction: 0.5
+      IsEnabled: true
+      IsSensor: false
+      MaskBits: All
+      Restitution: 0.0
+      RollingFriction: 0.0
+      UpdateOrder: 0.5
+    - !Evergine.Framework.Physics3D.CylinderCollider3D,Evergine.Framework
+      Id: ef3657de-5a22-47fb-acaa-f7bb092a3ee9
+      Height: 0.0199999996
+      IsEnabled: true
+      Margin: 0.0399999991
+      Offset:
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      OrientationOffset:
+        W: 0.707106769
+        X: 0.707106769
+        Y: 0.0
+        Z: -0.0
+      Radius: 0.5
+    - !Evergine.Components.Graphics3D.Spinner,Evergine.Components
+      Id: 3ed46646-8309-45b4-8b16-b2923c51471a
+      AxisIncrease:
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      IsEnabled: true
+      UpdateOrder: 0.5
+  Children: []
+  Id: 305cc70d-7ee6-4cf0-9f9e-9c1f109b4521

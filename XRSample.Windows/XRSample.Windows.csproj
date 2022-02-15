@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Evergine.DirectX11" Version="2023.2.10.4-develop" />
+    <PackageReference Include="Evergine.HLSLEverywhere" Version="2023.2.10.4-develop" />
+    <PackageReference Include="Evergine.XAudio2" Version="2023.2.10.4-develop" />
+    <PackageReference Include="Evergine.Forms" Version="2023.2.10.4-develop" />
+    <PackageReference Include="Evergine.Targets" Version="2023.2.10.4-develop" />
+    <PackageReference Include="Evergine.Targets.Windows" Version="2023.2.10.4-develop" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XRSample\XRSample.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="$(DefineConstants.Contains('EVERGINE_EDITOR'))">
+    <ProjectReference Include="..\XRSample.Editor\XRSample.Editor.csproj" />
+  </ItemGroup>
+</Project>

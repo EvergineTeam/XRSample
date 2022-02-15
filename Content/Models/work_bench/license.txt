@@ -1,0 +1,11 @@
+Model Information:
+* title:	Work Bench
+* source:	https://sketchfab.com/3d-models/work-bench-87b0fa7249cf4382b41c118f665f6439
+* author:	Cosche (https://sketchfab.com/Cosche)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Work Bench" (https://sketchfab.com/3d-models/work-bench-87b0fa7249cf4382b41c118f665f6439) by Cosche (https://sketchfab.com/Cosche) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
