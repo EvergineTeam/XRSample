@@ -5,6 +5,7 @@ This demo shows how you can use Evergine in an VR application using OpenXR. In t
 ![alt Screenshot](Screenshots/screenshot.jpg)
 
 Robot arm model created by **[re1monsen](https://sketchfab.com/re1monsen)** available in **[Sketchfab](https://sketchfab.com/3d-models/black-honey-robotic-arm-c50671f2a8e74de2a2e687103fdc93ab)** and adapted for this application.
+
 Workbench model created by **[Cosche](https://sketchfab.com/Cosche)** available in **[Sketchfab](https://sketchfab.com/3d-models/work-bench-87b0fa7249cf4382b41c118f665f6439)**.
 
 ## Build and Run
