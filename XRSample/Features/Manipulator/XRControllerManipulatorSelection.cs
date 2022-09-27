@@ -15,12 +15,12 @@ using System.Text;
 namespace XRSample.Features.Manipulator
 {
 
-    public class XRControllerManipulatorSelection :  ManipulatorSelection
+    public class XRControllerManipulatorSelection : ManipulatorSelection
     {
-        [BindComponent]
+        [BindComponent(isExactType: false)]
         private TrackXRController controller = null;
 
-        [BindComponent (source: BindComponentSource.ChildrenSkipOwner, tag: "Pointer")]
+        [BindComponent(source: BindComponentSource.ChildrenSkipOwner, tag: "Pointer")]
         private Transform3D pointerTransform = null;
 
         private Vector3 initDirection;
@@ -30,30 +30,29 @@ namespace XRSample.Features.Manipulator
 
         protected override void Update(TimeSpan gameTime)
         {
-            if (this.controller?.TrackingState != Evergine.Framework.XR.XRTrackingState.Running_OK)
+            if (this.controller.TrackedDevice != null)
             {
-                return;
+                this.Pointer = this.controller.Pointer;
+
+                this.pointerTransform.Position = this.Pointer.Position;
+                this.pointerTransform.LookAt(this.Pointer.GetPoint(1));
+
+                this.controller.TrackedDevice.GetControllerState(out var controlState);
+
+                var btnState = this.controller.ControllerState.TriggerButton;
+                if (btnState == Evergine.Common.Input.ButtonState.Pressing)
+                {
+                    this.Select();
+
+                    this.initDirection = this.GetRotationDirection();
+                }
+                else if (btnState == Evergine.Common.Input.ButtonState.Releasing)
+                {
+                    this.Unselect();
+                }
+
+                base.Update(gameTime); 
             }
-
-            this.Pointer = this.controller.Pointer;
-
-            this.pointerTransform.Position = this.Pointer.Position;
-            this.pointerTransform.LookAt(this.Pointer.GetPoint(1));
-
-
-            var btnState = this.controller.ControllerState.TriggerButton;
-            if (btnState == Evergine.Common.Input.ButtonState.Pressing)
-            {
-                this.Select();
-
-                this.initDirection = this.GetRotationDirection();
-            }
-            else if (btnState == Evergine.Common.Input.ButtonState.Releasing)
-            {
-                this.Unselect();
-            }
-
-            base.Update(gameTime);
         }
 
         private Vector3 GetRotationDirection()

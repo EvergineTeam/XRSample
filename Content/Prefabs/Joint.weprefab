@@ -1,0 +1,47 @@
+!Evergine.Framework.Assets.AssetSources.Entities.PrefabModel,Evergine.Framework
+Root:
+  Name: Joint
+  Tag: null
+  IsEnabled: true
+  IsStatic: false
+  Components:
+    - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+      Id: d2f3a926-9c1e-43b8-a174-2bea164c9937
+      IsEnabled: true
+      LocalOrientation:
+        W: 1.0
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      LocalPosition:
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      LocalScale:
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
+    - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+      Id: 6554e31f-70e8-44e7-b85f-ff51badd2001
+      AsignedTo: Default
+      IsEnabled: true
+      Material: 02181b63-5a0e-46d1-9208-d92376ae33fb
+    - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
+      Id: de79e29f-6fbf-47ce-ba82-54a7d08d3069
+      InitialU: 0.0
+      InitialV: 0.0
+      IsEnabled: true
+      Size: 1.0
+      UTile: 1.0
+      UVHorizontalFlip: false
+      UVVerticalFlip: false
+      YTile: 1.0
+    - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+      Id: 095881d9-a38c-490e-a737-2b4ab350040c
+      DebugBoundingbox: true
+      IsCullingEnabled: true
+      IsEnabled: true
+      OrderBias: 0
+      RenderFlags: CastShadows
+  Children: []
+  Id: 55ed51c3-47ce-4073-9d8f-a29fe5a47f06

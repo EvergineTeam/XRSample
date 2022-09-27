@@ -94,7 +94,17 @@ namespace XRSample.Quest
             var mirrorDisplay = new Display(surface, frameBuffer);
 
             // Create OpenXR Platform
-            openXRPlatform = new OpenXRPlatform(null, new OpenXRInteractionProfile[] { DefaultInteractionProfiles.OculusTouchProfile })
+            openXRPlatform = new OpenXRPlatform(
+                new string[]
+                {
+                    "XR_EXT_hand_tracking",         // Enable hand tracking in OpenXR application
+                    "XR_FB_hand_tracking_aim",      // Allow to use hand gestures in Meta Quest devices
+                    "XR_FB_hand_tracking_mesh",     // Obtain hand mesh in Meta Quest devices
+                },
+                new OpenXRInteractionProfile[]
+                {
+                    DefaultInteractionProfiles.OculusTouchProfile
+                })
             {
                 RenderMirrorTexture = false,
                 ReferenceSpace = ReferenceSpaceType.Stage,
