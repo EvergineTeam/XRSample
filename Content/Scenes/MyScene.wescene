@@ -42,9 +42,6 @@ Items:
         ClearFlags: All
         ClearStencil: 0
         Compensation: 0.0
-        DepthRange:
-          MaxDepth: 1.0
-          MinDepth: 0.0
         DisplayTag: null
         Exposure: 1.0
         FarPlane: 10.0
@@ -65,13 +62,6 @@ Items:
         LogLuminanceRange: 12.0
         MinLogLuminance: -10.0
         NearPlane: 0.100000001
-        ScreenViewport:
-          Height: 348.0
-          MaxDepth: 1.0
-          MinDepth: 0.0
-          Width: 576.0
-          X: 0.0
-          Y: 0.0
         Sensitivity: 100.0
         SensorSize:
           X: 36.0
@@ -79,10 +69,6 @@ Items:
         ShutterSpeed: 1.20000005
         TAU: 1.10000002
         TagFilter: null
-        UpVector:
-          X: 0.0
-          Y: 1.0
-          Z: 0.0
         UsePhysicalParameters: false
     Children:
       - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
@@ -835,9 +821,65 @@ Items:
                 SearchPassthroughLayer: OwnerEntity
             Children: []
             Id: 738fc7eb-02a1-4f64-9379-04d81299dfb9
+          - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+            Name: Help
+            Tag: PassthtoughHelp
+            IsEnabled: true
+            IsStatic: false
+            Components:
+              - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                Id: 25543054-63c2-438f-ad8e-e6e15d38d8ba
+                IsEnabled: true
+                LocalOrientation:
+                  W: 0.705338001
+                  X: -0.708871245
+                  Y: 4.22520188E-08
+                  Z: -4.99353822E-16
+                LocalPosition:
+                  X: 0.0482535362
+                  Y: 0.0158389211
+                  Z: -0.042108085
+                LocalScale:
+                  X: 1.0
+                  Y: 1.0
+                  Z: 1.0
+              - !Evergine.Components.Fonts.Text3DMesh,Evergine.Components
+                Id: 3261c216-3002-4c3d-a083-b3490df54d0e
+                Color:
+                  A: 255
+                  B: 255
+                  G: 255
+                  R: 255
+                Ellipsis: true
+                Font: d1322288-d9e9-4b1e-b2fe-ca281f0388a2
+                HorizontalAlignment: Left
+                IsEnabled: true
+                Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+                LineSpacing: 0.00300000003
+                Origin:
+                  X: 0.0
+                  Y: 0.0
+                ScaleFactor: 0.00700000022
+                Size:
+                  X: 0.090000011
+                  Y: 1.0
+                Softness: 0.75
+                Text: 'Y, X: Passthrough modes Stick: Passthrough opacity Menu: Passthrough Edge'
+                VerticalAlignment: Top
+                Wrapping: true
+              - !Evergine.Components.Fonts.Text3DRenderer,Evergine.Components
+                Id: 756be127-8819-4735-8d05-445f5c0d6644
+                DebugBoundingbox: true
+                DebugMode: false
+                IsCullingEnabled: true
+                IsEnabled: true
+                OrderBias: 0
+                RenderFlags: CastShadows
+            Children: []
+            Id: afcdb36c-6c6c-417c-a7a0-90a8541da1c1
         additionalComponentList:
           - !XRSample.Features.PassthroughController.PassthroughController,XRSample
-            Id: a3ae402b-711c-4bc3-a30d-8459c824254f
+            Id: 55f4d085-bd12-458d-b5ee-0ffc4c1eec47
             IsEnabled: true
             UpdateOrder: 0.5
     modificationList:

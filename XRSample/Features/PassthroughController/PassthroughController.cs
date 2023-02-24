@@ -31,6 +31,9 @@ namespace XRSample.Features.PassthroughController
         [BindEntity(source: BindEntitySource.Scene, tag: "Scenery")]
         private Entity scenery;
 
+        [BindEntity(source: BindEntitySource.Scene, tag: "PassthtoughHelp", isRequired:false)]
+        private Entity help;
+
         private XRPassthroughLayerComponent backgroundPassthrough;
         private XRPassthroughLayerComponent meshPassthrough;
 
@@ -41,6 +44,12 @@ namespace XRSample.Features.PassthroughController
         protected override bool OnAttached()
         {
             base.OnAttached();
+
+            if (!Application.Current.IsEditor && this.help != null)
+            {
+                this.help.IsEnabled = this.xrPlatform.Passthrough != null;
+            }
+
             if (this.xrPlatform.Passthrough == null)
             {
                 return false;
