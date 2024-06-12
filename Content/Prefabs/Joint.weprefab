@@ -28,14 +28,12 @@ Root:
       Material: 02181b63-5a0e-46d1-9208-d92376ae33fb
     - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
       Id: de79e29f-6fbf-47ce-ba82-54a7d08d3069
-      InitialU: 0.0
-      InitialV: 0.0
       IsEnabled: true
       Size: 1.0
       UTile: 1.0
-      UVHorizontalFlip: false
-      UVVerticalFlip: false
-      YTile: 1.0
+      UMirror: false
+      VMirror: false
+      VTile: 1.0
     - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
       Id: 095881d9-a38c-490e-a737-2b4ab350040c
       DebugBoundingbox: true

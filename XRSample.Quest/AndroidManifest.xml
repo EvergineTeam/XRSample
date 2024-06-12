@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
-          android:versionCode="1" 
-          android:versionName="1.0" 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0"
           package="com.companyname.XRSample.Quest">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-    
+  <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="30" />
+
+  <meta-data android:name="com.oculus.intent.category.VR" android:value="vr_only"/>
+  <meta-data android:name="com.oculus.supportedDevices" android:value="quest|quest2"/>
+
   <uses-feature android:name="android.hardware.vulkan.compute" android:version="0" android:required="true" />
   <uses-feature android:name="android.hardware.vulkan.level" android:version="0" android:required="true" />
-  <uses-feature android:name="android.hardware.vr.headtracking" android:required="true" />
+  <uses-feature android:name="android.hardware.vr.headtracking" android:required="true" android:version="1" />
+
+  <!--Uncomment the following line to enable Passthrough-->
+  <!-- <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true" /> -->
+
+  <!-- Tell the system this app can handle tracked remotes and hands -->
+  <uses-feature android:name="oculus.software.handtracking" android:required="false" />
 
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />

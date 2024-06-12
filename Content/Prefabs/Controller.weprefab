@@ -23,13 +23,8 @@ Root:
         Z: 1.0
     - !Evergine.Components.XR.TrackXRController,Evergine.Components
       Id: 5c37b4a8-c926-4e7c-ad88-a2e43b8fda23
-      DeviceIndex: 0
-      DeviceType: Controller
-      DeviceTypeCount: 0
       Handedness: LeftHand
-      HandednessCount: 0
       IsEnabled: true
-      SelectionStrategy: ByHandedness
       TrackingLostMode: DisableEntityOnPoseInvalid
       UpdateOrder: 0.5
     - !XRSample.Features.Manipulator.XRControllerManipulatorSelection,XRSample
@@ -102,14 +97,12 @@ Root:
               Material: 711b5f76-b92d-4fcd-adb2-c377a906fe61
             - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
               Id: 5448a760-7d89-4c2f-a6fc-a11c269be2b0
-              InitialU: 0.0
-              InitialV: 0.0
               IsEnabled: true
               Size: 1.0
               UTile: 1.0
-              UVHorizontalFlip: false
-              UVVerticalFlip: false
-              YTile: 1.0
+              UMirror: false
+              VMirror: false
+              VTile: 1.0
             - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
               Id: 132de7f8-cf5f-4f61-a215-e12cad8d9512
               DebugBoundingbox: true

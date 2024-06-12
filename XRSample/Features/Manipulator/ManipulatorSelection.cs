@@ -1,14 +1,7 @@
-﻿using Evergine.Common.Attributes;
-using Evergine.Common.Attributes.Converters;
-using Evergine.Common.Graphics;
-using Evergine.Components.XR;
-using Evergine.Framework;
-using Evergine.Framework.Graphics;
+﻿using Evergine.Framework;
 using Evergine.Framework.Managers;
 using Evergine.Mathematics;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace XRSample.Features.Manipulator
 {
@@ -16,7 +9,7 @@ namespace XRSample.Features.Manipulator
     public abstract class ManipulatorSelection : Behavior
     {
         [BindSceneManager]
-        private PhysicManager3D physicManager;
+        private PhysicManager3D physicManager = null;
 
         public Ray Pointer;
 

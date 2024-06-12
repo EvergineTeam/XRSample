@@ -5,9 +5,7 @@ using Evergine.Framework;
 using Evergine.Framework.Services;
 using Evergine.Framework.XR.Passthrough;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace XRSample.Features.PassthroughController
 {
@@ -23,16 +21,16 @@ namespace XRSample.Features.PassthroughController
         }
 
         [BindService]
-        private XRPlatform xrPlatform;
+        private XRPlatform xrPlatform = null;
 
         [BindComponent]
-        private TrackXRController controller;
+        private TrackXRController controller = null;
 
         [BindEntity(source: BindEntitySource.Scene, tag: "Scenery")]
-        private Entity scenery;
+        private Entity scenery = null;
 
         [BindEntity(source: BindEntitySource.Scene, tag: "PassthtoughHelp", isRequired:false)]
-        private Entity help;
+        private Entity help = null;
 
         private XRPassthroughLayerComponent backgroundPassthrough;
         private XRPassthroughLayerComponent meshPassthrough;

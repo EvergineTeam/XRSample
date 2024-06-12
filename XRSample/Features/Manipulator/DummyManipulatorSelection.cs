@@ -1,36 +1,22 @@
-﻿using Evergine.Common.Attributes;
-using Evergine.Common.Attributes.Converters;
-using Evergine.Common.Input.Keyboard;
-using Evergine.Common.Input.Mouse;
-using Evergine.Components.XR;
+﻿using Evergine.Common.Input.Mouse;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
-using Evergine.Framework.Managers;
 using Evergine.Framework.Services;
-using Evergine.Mathematics;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace XRSample.Features.Manipulator
 {
 
     public class DummyManipulatorSelection : ManipulatorSelection
     {
-        [BindComponent]
-        private Transform3D transform3D;
-
         [BindService(isRequired: false)]
-        private XRPlatform xrPlatform;
+        private XRPlatform xrPlatform = null;
 
         private Camera3D camera3D;
-        private KeyboardDispatcher keyboard;
         private MouseDispatcher mouse;
 
         private float initMouseX;
         
-        private float initPointer;
-
         public float Sensitivity { get; set; } = 0.1f;
 
         protected override bool OnAttached()
@@ -48,17 +34,14 @@ namespace XRSample.Features.Manipulator
             base.OnActivated();
             this.camera3D = this.Managers.RenderManager.ActiveCamera3D;
             var display = this.camera3D?.Display;
-            this.keyboard = display?.KeyboardDispatcher;
             this.mouse = display?.MouseDispatcher;
         }
 
         protected override void OnDeactivated()
         {
             base.OnDeactivated();
-            this.keyboard = null;
             this.mouse = null;
         }
-
 
         protected override void Update(TimeSpan gameTime)
         {

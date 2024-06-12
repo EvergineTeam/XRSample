@@ -487,8 +487,8 @@ Items:
                                   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
                                     Id: 2a7dc231-cfb4-46e9-86d5-a88f38a60051
                                     Source: 5a54c382-68af-4b0b-9b16-7be2e2055977
-                                    entityLinks: {}
-                                    modificationList:
+                                    EntityLinks: {}
+                                    Modifications:
                                       - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
                                         Name: LocalPosition
                                         Target: f9c721d8-c3c7-4c3c-8f8b-ff38abb5cc72
@@ -519,13 +519,13 @@ Items:
                                         Name: AxisRotation
                                         Target: 4dd19593-201d-4a96-841d-19063b5df967
                                         TypedValue: XAxis
-                                    removedComponentList: []
+                                    RemovedComponents: []
                                 Id: b6ac3f0b-7231-4ca8-b3be-09c68b6ea3d5
                               - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
                                 Id: 6a8bc972-3daa-4ade-96e2-9d7e2417249b
                                 Source: 5a54c382-68af-4b0b-9b16-7be2e2055977
-                                entityLinks: {}
-                                modificationList:
+                                EntityLinks: {}
+                                Modifications:
                                   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
                                     Name: LocalPosition
                                     Target: f9c721d8-c3c7-4c3c-8f8b-ff38abb5cc72
@@ -544,13 +544,13 @@ Items:
                                     Name: Model
                                     Target: e8c17089-6e21-410c-8055-3429c629fed8
                                     TypedValue: 00000000-0000-0000-0000-000000000000
-                                removedComponentList: []
+                                RemovedComponents: []
                             Id: 3a9f0fc7-3faa-4ed7-8bff-05488b81f4b1
                           - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
                             Id: 05193622-0db3-4ac5-99a7-6e66db032ffe
                             Source: 5a54c382-68af-4b0b-9b16-7be2e2055977
-                            entityLinks: {}
-                            modificationList:
+                            EntityLinks: {}
+                            Modifications:
                               - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
                                 Name: LocalPosition
                                 Target: f9c721d8-c3c7-4c3c-8f8b-ff38abb5cc72
@@ -581,13 +581,13 @@ Items:
                                 Name: AxisRotation
                                 Target: 4dd19593-201d-4a96-841d-19063b5df967
                                 TypedValue: XAxis
-                            removedComponentList: []
+                            RemovedComponents: []
                         Id: ec745405-069c-4730-8c62-59368bd16cbd
                       - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
                         Id: d5c2a677-9825-490b-b1b2-9c5b5ab4ac53
                         Source: 5a54c382-68af-4b0b-9b16-7be2e2055977
-                        entityLinks: {}
-                        modificationList:
+                        EntityLinks: {}
+                        Modifications:
                           - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
                             Name: LocalPosition
                             Target: f9c721d8-c3c7-4c3c-8f8b-ff38abb5cc72
@@ -618,13 +618,13 @@ Items:
                             Name: AxisRotation
                             Target: 4dd19593-201d-4a96-841d-19063b5df967
                             TypedValue: XAxis
-                        removedComponentList: []
+                        RemovedComponents: []
                     Id: 22838d79-9327-4c14-b44b-8942fd1fc231
                   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
                     Id: 90633800-4985-4994-902c-514cb36f7828
                     Source: 5a54c382-68af-4b0b-9b16-7be2e2055977
-                    entityLinks: {}
-                    modificationList:
+                    EntityLinks: {}
+                    Modifications:
                       - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
                         Name: LocalPosition
                         Target: f9c721d8-c3c7-4c3c-8f8b-ff38abb5cc72
@@ -655,18 +655,18 @@ Items:
                         Name: AxisRotation
                         Target: 4dd19593-201d-4a96-841d-19063b5df967
                         TypedValue: XAxis
-                    removedComponentList: []
+                    RemovedComponents: []
                 Id: ae827778-cb46-477c-9c6e-078ee3a9af81
               - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
                 Id: 305cc70d-7ee6-4cf0-9f9e-9c1f109b4521
                 Source: 5a54c382-68af-4b0b-9b16-7be2e2055977
-                entityLinks: {}
-                modificationList:
+                EntityLinks: {}
+                Modifications:
                   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Framework.Graphics.Model,Evergine.Framework]],Evergine.Framework
                     Name: Model
                     Target: e8c17089-6e21-410c-8055-3429c629fed8
                     TypedValue: 00000000-0000-0000-0000-000000000000
-                removedComponentList: []
+                RemovedComponents: []
             Id: 391427dc-df5e-49fd-ae7a-dc005bc020a7
         Id: 8d21168a-1a05-439e-84e6-733f75f68e0f
       - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
@@ -739,9 +739,9 @@ Items:
   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
     Id: 019ff454-0256-4a07-b178-150ecfef0a7d
     Source: 4168f3d2-afea-4596-b329-a0a0bf170008
-    entityLinks:
+    EntityLinks:
       019ff454-0256-4a07-b178-150ecfef0a7d:
-        additionalChildrenList:
+        AdditionalChildren:
           - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
             Name: PassthroughMesh
             Tag: null
@@ -877,12 +877,12 @@ Items:
                 RenderFlags: CastShadows
             Children: []
             Id: afcdb36c-6c6c-417c-a7a0-90a8541da1c1
-        additionalComponentList:
+        AdditionalComponents:
           - !XRSample.Features.PassthroughController.PassthroughController,XRSample
             Id: 55f4d085-bd12-458d-b5ee-0ffc4c1eec47
             IsEnabled: true
             UpdateOrder: 0.5
-    modificationList:
+    Modifications:
       - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.String,System.Private.CoreLib]],Evergine.Framework
         Name: Name
         Target: 019ff454-0256-4a07-b178-150ecfef0a7d
@@ -894,21 +894,21 @@ Items:
           X: -0.161897212
           Y: 0.563092351
           Z: 4.7826191E-08
-    removedComponentList: []
+    RemovedComponents: []
   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
     Id: 132377bd-6313-47af-bedf-b65de82949d1
     Source: 4168f3d2-afea-4596-b329-a0a0bf170008
-    entityLinks:
+    EntityLinks:
       019ff454-0256-4a07-b178-150ecfef0a7d:
-        additionalChildrenList: []
-        additionalComponentList:
+        AdditionalChildren: []
+        AdditionalComponents:
           - !Evergine.Components.XR.TrackXRController,Evergine.Components
             Id: dd9516c8-e62c-4f77-b06c-9b37d645501d
             Handedness: RightHand
             IsEnabled: true
             TrackingLostMode: DisableEntityOnPoseInvalid
             UpdateOrder: 0.5
-    modificationList:
+    Modifications:
       - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.String,System.Private.CoreLib]],Evergine.Framework
         Name: Name
         Target: 019ff454-0256-4a07-b178-150ecfef0a7d
@@ -920,15 +920,15 @@ Items:
           X: 0.20662722
           Y: 0.563092351
           Z: 9.17577836E-08
-    removedComponentList:
+    RemovedComponents:
       - 5c37b4a8-c926-4e7c-ad88-a2e43b8fda23
   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
     Id: e0154ed4-c31f-420e-bb25-727a96118d69
     Source: 4168f3d2-afea-4596-b329-a0a0bf170008
-    entityLinks:
+    EntityLinks:
       019ff454-0256-4a07-b178-150ecfef0a7d:
-        additionalChildrenList: []
-        additionalComponentList:
+        AdditionalChildren: []
+        AdditionalComponents:
           - !Evergine.Components.XR.TrackXRArticulatedHand,Evergine.Components
             Id: f6d8e623-10e0-475f-a4fb-f4d121770b19
             Handedness: RightHand
@@ -951,7 +951,7 @@ Items:
           - !Evergine.Components.XR.XRDeviceRenderableModel,Evergine.Components
             Id: d6fd1f0c-5a0f-4fb4-b1f8-0b6e55dd0d77
             IsEnabled: true
-    modificationList:
+    Modifications:
       - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.String,System.Private.CoreLib]],Evergine.Framework
         Name: Name
         Target: 019ff454-0256-4a07-b178-150ecfef0a7d
@@ -967,15 +967,15 @@ Items:
         Name: IsEnabled
         Target: 6fe3739f-328b-4167-bc47-311705b36a62
         TypedValue: false
-    removedComponentList:
+    RemovedComponents:
       - 5c37b4a8-c926-4e7c-ad88-a2e43b8fda23
   - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
     Id: 2edc616c-e017-402d-ba08-1f5c3c6134a1
     Source: 4168f3d2-afea-4596-b329-a0a0bf170008
-    entityLinks:
+    EntityLinks:
       019ff454-0256-4a07-b178-150ecfef0a7d:
-        additionalChildrenList: []
-        additionalComponentList:
+        AdditionalChildren: []
+        AdditionalComponents:
           - !Evergine.Components.XR.TrackXRArticulatedHand,Evergine.Components
             Id: 06ef1db3-dde0-4dd1-8f71-9dcbab5342d0
             Handedness: LeftHand
@@ -998,7 +998,7 @@ Items:
           - !Evergine.Components.XR.XRDeviceRenderableModel,Evergine.Components
             Id: 884e7b5f-8b0c-47d7-b7d6-6e7877a03572
             IsEnabled: true
-    modificationList:
+    Modifications:
       - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.String,System.Private.CoreLib]],Evergine.Framework
         Name: Name
         Target: 019ff454-0256-4a07-b178-150ecfef0a7d
@@ -1014,7 +1014,7 @@ Items:
         Name: IsEnabled
         Target: 6fe3739f-328b-4167-bc47-311705b36a62
         TypedValue: false
-    removedComponentList:
+    RemovedComponents:
       - 5c37b4a8-c926-4e7c-ad88-a2e43b8fda23
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: Passthrough
