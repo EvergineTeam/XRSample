@@ -117,8 +117,8 @@ namespace XRSample.Quest
                     "XR_FB_hand_tracking_aim",      // Allow to use hand gestures in Meta Quest devices
                     "XR_FB_hand_tracking_mesh",     // Obtain hand mesh in Meta Quest devices
                     
-                    // "XR_FB_passthrough",         // Enable Passthrough in Meta Quest devices
-                    // "XR_FB_triangle_mesh",       // Allow to project Passthrough on Meshes
+                    "XR_FB_passthrough",         // Enable Passthrough in Meta Quest devices
+                    "XR_FB_triangle_mesh",       // Allow to project Passthrough on Meshes
                 }, 
                 new OpenXRInteractionProfile[] 
                 { 

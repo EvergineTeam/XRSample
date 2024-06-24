@@ -13,7 +13,7 @@
   <uses-feature android:name="android.hardware.vr.headtracking" android:required="true" android:version="1" />
 
   <!--Uncomment the following line to enable Passthrough-->
-  <!-- <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true" /> -->
+   <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true" /> 
 
   <!-- Tell the system this app can handle tracked remotes and hands -->
   <uses-feature android:name="oculus.software.handtracking" android:required="false" />
