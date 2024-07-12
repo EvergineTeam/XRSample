@@ -1,0 +1,67 @@
+!Evergine.Framework.Assets.AssetSources.Entities.PrefabModel,Evergine.Framework
+Root:
+  Name: beacon
+  Tag: null
+  IsEnabled: true
+  IsStatic: false
+  Components:
+    - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+      Id: 8f7e597e-4e6f-45fb-aed8-25a696026cba
+      IsEnabled: true
+      LocalOrientation:
+        W: 1.0
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      LocalPosition:
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      LocalScale:
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
+  Children:
+    - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+      Name: Beacon_glb
+      Tag: null
+      IsEnabled: true
+      IsStatic: false
+      Components:
+        - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+          Id: 6e306093-e942-4608-971e-1b7700d8faf5
+          IsEnabled: true
+          LocalOrientation:
+            W: 1.0
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          LocalPosition:
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          LocalScale:
+            X: 1.0
+            Y: 1.0
+            Z: 1.0
+        - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+          Id: 7ba9f51a-a97c-41e6-afa3-5debf1a6a254
+          AsignedTo: Material.001
+          IsEnabled: true
+          Material: f08c5cd9-1677-4d92-b7e4-fc8464ed1953
+          UseCopy: false
+        - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+          Id: 55249bc6-dd8d-40e1-bdb6-d6b466b0d8ec
+          IsEnabled: true
+          Model: 1bdd7127-dee3-4d22-981a-4ae3403b1dfb
+          ModelMeshName: Torus
+        - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+          Id: 184e78b2-35d8-45cc-af9e-62d7aafc4e3c
+          DebugBoundingbox: true
+          IsCullingEnabled: true
+          IsEnabled: true
+          OrderBias: 0
+          RenderFlags: CastShadows
+      Children: []
+      Id: a9c1a879-927c-42a0-8a81-e3cb8fe95ec2
+  Id: cf9c9aca-548b-448c-beb3-95dd77381374

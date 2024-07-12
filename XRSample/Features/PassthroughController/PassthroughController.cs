@@ -37,7 +37,7 @@ namespace XRSample.Features.PassthroughController
 
         private XRPassthroughLayerComponent selectedPassthrough;
 
-        private PassthroughState passthroughState = PassthroughState.None;
+        private PassthroughState passthroughState = PassthroughState.BgPassthrough;
 
         protected override bool OnAttached()
         {
@@ -89,7 +89,7 @@ namespace XRSample.Features.PassthroughController
 
             this.meshPassthrough.ColorMapMonoToMono = monoMap;
 
-            this.SetPassthroughState(PassthroughState.None);
+            this.SetPassthroughState(this.passthroughState);
 
             base.Start();
         }

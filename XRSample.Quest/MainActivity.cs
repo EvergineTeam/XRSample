@@ -119,6 +119,8 @@ namespace XRSample.Quest
                     
                     "XR_FB_passthrough",         // Enable Passthrough in Meta Quest devices
                     "XR_FB_triangle_mesh",       // Allow to project Passthrough on Meshes
+
+                    "XR_FB_render_model",        // Allow to use 3D models for connected devices
                 }, 
                 new OpenXRInteractionProfile[] 
                 { 

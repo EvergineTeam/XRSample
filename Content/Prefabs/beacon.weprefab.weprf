@@ -1,0 +1,140 @@
+!Evergine.Assets.Exporters.Prefab.PrefabMetaFile,Evergine.Assets
+Id: da613e8e-d3f9-4b0f-bd17-b8bf4d1b8aa0
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+PrefabData: null
+Profiles: {}
+Source:
+  Header:
+    Id: 5459f40e-9b31-4538-9842-19d94f47c8c8
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  PrefabData:
+    Id: 017afd9f-7dcb-4237-a42f-d95b215667e0
+    Root:
+      Name: beacon
+      Tag: null
+      IsEnabled: true
+      IsStatic: false
+      Components:
+        - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+          Id: 8f7e597e-4e6f-45fb-aed8-25a696026cba
+          IsEnabled: true
+          LocalOrientation:
+            W: 1.0
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          LocalPosition:
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          LocalScale:
+            X: 1.0
+            Y: 1.0
+            Z: 1.0
+      Children:
+        - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+          Name: arc3d
+          Tag: null
+          IsEnabled: true
+          IsStatic: false
+          Components:
+            - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+              Id: e45cae65-3e69-4fb0-86e0-fac9ca0f29d6
+              IsEnabled: true
+              LocalOrientation:
+                W: 0.707106769
+                X: 0.707106769
+                Y: 0.0
+                Z: 0.0
+              LocalPosition:
+                X: 0.0
+                Y: 0.0
+                Z: 0.0
+              LocalScale:
+                X: 1.0
+                Y: 1.0
+                Z: 1.0
+            - !Evergine.Components.Primitives.LineArcMesh,Evergine.Components
+              Id: 31212491-f4fe-4db6-9dee-c8a6aaec8b8f
+              Angle: 6.28318548
+              Color:
+                A: 255
+                B: 0
+                G: 255
+                R: 255
+              DiffuseSampler: null
+              DiffuseTexture: null
+              IsCameraAligned: false
+              IsEnabled: true
+              Model: null
+              Radius:
+                X: 0.100000001
+                Y: 0.100000001
+              Tessellation: 32
+              TexcoordOffset:
+                X: 0.0
+                Y: 0.0
+              TextureTiling:
+                X: 1.0
+                Y: 1.0
+              Thickness: 0.00999999978
+              UseWorldSpace: false
+            - !Evergine.Components.Graphics3D.LineMeshRenderer3D,Evergine.Components
+              Id: fbd052fb-54a9-4227-84c0-1df144b7227d
+              DebugBoundingbox: true
+              IsCullingEnabled: true
+              IsEnabled: true
+              Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+              OrderBias: 0
+              RenderFlags: CastShadows
+          Children: []
+          Id: ed2820c5-08de-4d07-b85a-73984f694aa7
+        - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+          Name: cone
+          Tag: null
+          IsEnabled: true
+          IsStatic: false
+          Components:
+            - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+              Id: 1dd10eec-d38c-487f-b914-16c286818bef
+              IsEnabled: true
+              LocalOrientation:
+                W: -4.37113883E-08
+                X: 1.0
+                Y: 0.0
+                Z: 0.0
+              LocalPosition:
+                X: 0.0
+                Y: 0.0997041389
+                Z: 1.18856587E-08
+              LocalScale:
+                X: 1.0
+                Y: 1.0
+                Z: 1.0
+            - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+              Id: 6bad3c98-8d5b-4580-b476-a3f75e30ae7a
+              AsignedTo: Default
+              IsEnabled: true
+              Material: 32bad903-e3f1-4948-9a4a-8ce46176d356
+              UseCopy: false
+            - !Evergine.Components.Graphics3D.ConeMesh,Evergine.Components
+              Id: 08e3a569-c54d-4e80-b715-2e77f5429499
+              Diameter: 0.100000001
+              Height: 0.200000003
+              IsEnabled: true
+              Tessellation: 16
+            - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+              Id: bd00c02c-d112-4cc3-9127-307ab0083383
+              DebugBoundingbox: true
+              IsCullingEnabled: true
+              IsEnabled: true
+              OrderBias: 0
+              RenderFlags: CastShadows
+          Children: []
+          Id: b2b27e90-f71b-48fb-b812-537281325bd3
+      Id: cf9c9aca-548b-448c-beb3-95dd77381374

@@ -1,5 +1,8 @@
-﻿using Evergine.Framework;
+﻿using Evergine.Components.XR;
+using Evergine.Framework;
+using Evergine.Framework.Graphics;
 using Evergine.Framework.Managers;
+using Evergine.Framework.Prefabs;
 using Evergine.Mathematics;
 using System;
 
@@ -16,6 +19,14 @@ namespace XRSample.Features.Manipulator
         private ManipulatorComponent selectedManipulator;
 
         private ManipulatorComponent pointedManipulator;
+
+        private Prefab prefab;
+
+        [BindComponent]
+        private Transform3D transform;
+
+        [BindComponent(isExactType:false)]
+        private TrackXRDevice xrDevice;
 
         public float RayDistance { get; set; } = 4f;
 
@@ -49,6 +60,13 @@ namespace XRSample.Features.Manipulator
             }
         }
 
+        protected override bool OnAttached()
+        {
+            this.prefab = this.Managers.AssetSceneManager.Load<Prefab>(EvergineContent.Prefabs.beacon_weprefab);
+            return base.OnAttached();
+
+        }
+
         protected override void Update(TimeSpan gameTime)
         {
             if (this.selectedManipulator == null)
@@ -80,6 +98,13 @@ namespace XRSample.Features.Manipulator
             if (this.selectedManipulator == null && this.PointedManipulator != null)
             {
                 this.SelectedManipulator = this.PointedManipulator;
+            }
+
+            if (this.PointedManipulator == null)
+            {
+                var entity = this.prefab.Instantiate();
+                entity.FindComponent<Transform3D>().Position = this.xrDevice.Pointer.Position;
+                this.Managers.EntityManager.Add(entity);
             }
         }
 
