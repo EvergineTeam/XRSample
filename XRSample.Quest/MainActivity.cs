@@ -74,15 +74,13 @@ namespace XRSample.Quest
 
         }
 
-        protected override void OnStop()
+        protected override void OnDestroy()
         {
-            base.OnStop();
+            base.OnDestroy();
             this.windowsSystem.Dispose();
             this.application.Dispose();
             this.windowsSystem = null;
             this.application = null;
-
-            Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
         }
 
         private void ConfigureGraphicsContext(MyApplication application, Surface surface)
