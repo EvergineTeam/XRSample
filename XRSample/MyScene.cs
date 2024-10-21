@@ -20,7 +20,7 @@ namespace XRSample
             base.Start();
             var drawContext = (this.Managers.RenderManager.ActiveCamera3D.DrawContext as ForwardDrawContext);
             drawContext.ZPrePassIsEnabled = false;
-            drawContext.DistortionPassIsEnabled = false;
+            drawContext.GBufferPassIsEnabled = false;
         }
     }
 }

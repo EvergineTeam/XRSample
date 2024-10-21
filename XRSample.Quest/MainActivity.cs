@@ -11,7 +11,7 @@ using Display = Evergine.Framework.Graphics.Display;
 using Surface = Evergine.Common.Graphics.Surface;
 using Evergine.OpenXR;
 using Activity = Android.App.Activity;
-using Evergine.AndroidView;
+using Evergine.Android;
 
 namespace XRSample.Quest
 {
@@ -44,9 +44,9 @@ namespace XRSample.Quest
             this.application = new MyApplication();
 
             // Create Services
-            this.windowsSystem = new global::Evergine.AndroidView.AndroidWindowsSystem(this);
+            this.windowsSystem = new global::Evergine.Android.AndroidWindowsSystem(this);
             this.application.Container.RegisterInstance(windowsSystem);
-            var surface = this.windowsSystem.CreateSurface(0, 0) as global::Evergine.AndroidView.AndroidSurface;
+            var surface = this.windowsSystem.CreateSurface(0, 0) as global::Evergine.Android.AndroidSurface;
 
             var view = this.FindViewById<RelativeLayout>(Resource.Id.evergineContainer);
             view.AddView(surface.NativeSurface);
@@ -117,12 +117,15 @@ namespace XRSample.Quest
                     
                     "XR_FB_passthrough",         // Enable Passthrough in Meta Quest devices
                     "XR_FB_triangle_mesh",       // Allow to project Passthrough on Meshes
+
+                    ////"XR_META_simultaneous_hands_and_controllers", // Allow to use hands and controllers simultaneously
                 }, 
                 new OpenXRInteractionProfile[] 
                 { 
                     DefaultInteractionProfiles.OculusTouchProfile 
                 })
             {
+                ////UseSimultaneousHandsAndControllers = true,
                 RenderMirrorTexture = false,
                 ReferenceSpace = ReferenceSpaceType.Stage,
                 MirrorDisplay = mirrorDisplay,
