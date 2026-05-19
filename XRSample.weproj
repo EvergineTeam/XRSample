@@ -2,7 +2,7 @@
 Packages:
   - Id: Evergine.Core
     LocalPath: null
-    Version: 2025.3.18.7
+    Version: 2026.5.19.266-nightly
 Parameters:
   MaxSkinningWeights: 4
   SparseMorphTargets: false
