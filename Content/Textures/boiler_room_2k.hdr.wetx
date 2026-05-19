@@ -1,5 +1,5 @@
 !Evergine.Assets.Exporters.TextureMetaFile,Evergine.Assets
-Id: ba5a3a96-4480-45ae-877f-ef53c058f23e
+Id: ccac8a8b-1613-4223-a52c-a08de3a434c8
 DefaultProfile:
   ExcludeAsset: false
   ExportedItem: null
@@ -18,16 +18,16 @@ Profiles: {}
 SamplerID: 00000000-0000-0000-0000-000000000000
 Source:
   Header:
-    Id: 47ba8189-62c0-4879-9199-962861aea09e
+    Id: 147f21b7-ebb5-44e2-a356-bd7ef8e482ab
     IsCompressed: true
   LastModified: 0001-01-01T00:00:00.0000000
   TextureInfo:
-    Id: 83d8d23e-fb5a-4bee-b75c-71c9fb5e4231
+    Id: 34641c3c-9294-4d09-839e-599b9e1cfeac
+    DataFormat: bitmap
     Description:
       ArraySize: 1
       CpuAccess: None
       Depth: 1
-      Faces: 1
       Flags: ShaderResource
       Format: R32G32B32A32_Float
       Height: 1024
@@ -36,5 +36,4 @@ Source:
       Type: Texture2D
       Usage: Default
       Width: 2048
-    HasData: true
     SamplerID: 9018edf8-ea96-4721-bf83-5561942432e0
