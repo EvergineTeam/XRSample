@@ -1,0 +1,9 @@
+!Evergine.Assets.Exporters.ReflectionProbeMetaFile,Evergine.Assets
+Id: 9f067f91-1ef7-440f-9b71-10619b9ae976
+DefaultProfile:
+  ExcludeAsset: false
+  Name: default
+  Platform: Undefined
+ExportAsRaw: false
+Profiles: {}
+SHCoefficients: null

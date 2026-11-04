@@ -46,7 +46,7 @@ namespace XRSample.Quest
             // Create Services
             this.windowsSystem = new global::Evergine.Android.AndroidWindowsSystem(this);
             this.application.Container.RegisterInstance(windowsSystem);
-            var surface = this.windowsSystem.CreateSurface(0, 0) as global::Evergine.Android.AndroidSurface;
+            var surface = this.windowsSystem.CreateSurface(false) as global::Evergine.Android.AndroidSurface;
 
             var view = this.FindViewById<RelativeLayout>(Resource.Id.evergineContainer);
             view.AddView(surface.NativeSurface);

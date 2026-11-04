@@ -12,7 +12,6 @@
     <PackageReference Include="Evergine.Framework" Version="2023.2.10.4-develop" />
     <PackageReference Include="Evergine.Mathematics" Version="2023.2.10.4-develop" />
     <PackageReference Include="Evergine.Platform" Version="2023.2.10.4-develop" />
-    <PackageReference Include="Evergine.Bullet" Version="2023.2.10.4-develop" />
     <PackageReference Include="Evergine.Targets" Version="2023.2.10.4-develop" />
     <PackageReference Include="Evergine.CodeScenes" Version="2023.2.10.4-develop" />
   </ItemGroup>

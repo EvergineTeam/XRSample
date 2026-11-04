@@ -63,33 +63,28 @@ Root:
       MaxAngleLimit: 0.0
       MinAngleLimit: 0.0
       UpdateOrder: 0.5
-    - !Evergine.Framework.Physics3D.StaticBody3D,Evergine.Framework
+    - !Evergine.Framework.Physics.StaticBody,Evergine.Framework
       Id: 75d6202e-c690-4744-afcc-ca52a9848423
-      CcdMotionThreshold: 0.0
-      CcdSweptSphereRadius: 0.200000003
-      CollisionCategories: Cat1
+      CollisionCategory: Cat1
       Friction: 0.5
       IsEnabled: true
       IsSensor: false
-      MaskBits: All
       Restitution: 0.0
-      RollingFriction: 0.0
-      UpdateOrder: 0.5
-    - !Evergine.Framework.Physics3D.CylinderCollider3D,Evergine.Framework
+    - !Evergine.Framework.Physics.CylinderCollider,Evergine.Framework
       Id: ef3657de-5a22-47fb-acaa-f7bb092a3ee9
       Height: 0.0199999996
       IsEnabled: true
-      Margin: 0.0399999991
       Offset:
         X: 0.0
         Y: 0.0
         Z: 0.0
-      OrientationOffset:
-        W: 0.707106769
-        X: 0.707106769
-        Y: 0.0
-        Z: -0.0
+      RotationOffset:
+        X: 1.5707963
+        Y: 0
+        Z: 0
       Radius: 0.5
+      UseModelBounds: true
+      ConvexRadius: 0.0399999991
     - !Evergine.Components.Graphics3D.Spinner,Evergine.Components
       Id: 3ed46646-8309-45b4-8b16-b2923c51471a
       AxisIncrease:

@@ -2,6 +2,7 @@
 using Evergine.Framework.Managers;
 using Evergine.Mathematics;
 using System;
+using Evergine.Framework.Physics;
 
 namespace XRSample.Features.Manipulator
 {
@@ -9,7 +10,7 @@ namespace XRSample.Features.Manipulator
     public abstract class ManipulatorSelection : Behavior
     {
         [BindSceneManager]
-        private PhysicManager3D physicManager = null;
+        private PhysicsManager physicManager = null;
 
         public Ray Pointer;
 
@@ -55,10 +56,10 @@ namespace XRSample.Features.Manipulator
             {
                 if (this.Pointer != default)
                 {
-                    var hitResult = physicManager.RayCast(ref this.Pointer, this.RayDistance);
-                    if (hitResult.Succeeded)
+                    bool hitResultSucceeded = physicManager.RayCast(ref this.Pointer, this.RayDistance, new QueryFilter { CategoryMask = CollisionCategory.All, IncludeSensors = true }, out RayCastHit hitResult);
+                    if (hitResultSucceeded)
                     {
-                        var pointedManipulator = hitResult.Collider?.ColliderComponent?.Owner?.FindComponent<ManipulatorComponent>();
+                        var pointedManipulator = hitResult.Collider?.Owner?.FindComponent<ManipulatorComponent>();
                         this.PointedManipulator = pointedManipulator;
                     }
                     else
